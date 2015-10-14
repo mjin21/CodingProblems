@@ -43,12 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Data Structures\BST.cs" />
+    <Compile Include="DataStructures\BST.cs" />
+    <Compile Include="DataStructures\BT.cs" />
     <Compile Include="DeleteMiddleNode.cs" />
     <Compile Include="DeleteRowInMatrix.cs" />
     <Compile Include="Equilibrium.cs" />
-    <Compile Include="Data Structures\Graph.cs" />
-    <Compile Include="Data Structures\LinkedList.cs" />
+    <Compile Include="DataStructures\Graph.cs" />
+    <Compile Include="DataStructures\LinkedList.cs" />
     <Compile Include="NumSquares.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

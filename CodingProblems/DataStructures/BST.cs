@@ -1,81 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace CodingProblems
+namespace CodingProblems.DataStructures
 {
-    public class BTNode
-    {
-        public BTNode left;
-        public BTNode right;
-        public object value;
-
-        public BTNode(BTNode left, BTNode right, int value)
-        {
-            this.left = left;
-            this.right = right;
-            this.value = value;
-        }
-    }
-
-    public class BinaryTree
-    {
-        public BTNode Root;
-
-        public BinaryTree(BTNode root)
-        {
-            Root = root;
-        }
-
-        public void PreOrderTraversal(BTNode node)
-        {
-            if(node == null)
-                return;
-            Console.Out.Write(node.value);
-            PreOrderTraversal(node.left);
-            PreOrderTraversal(node.right);
-        }        
-        public void InOrderTraversal(BTNode node)
-        {
-            if (node == null)
-                return;
-            InOrderTraversal(node.left);
-            Console.Out.Write(node.value);
-            InOrderTraversal(node.right);
-        }
-        public void PostOrderTraversal(BTNode node)
-        {
-            if (node == null)
-                return;
-            PostOrderTraversal(node.left);
-            PostOrderTraversal(node.right);
-            Console.Out.Write(node.value);
-        }
-
-        public void BFS(BTNode node)
-        {
-            if (node == null)
-                return;
-
-            Queue<BTNode> queue = new Queue<BTNode>();
-            queue.Enqueue(node);
-            while (queue.Count != 0)
-            {
-                BTNode current = queue.Dequeue();
-
-                Console.Out.Write(current.value);
-                if (node.left == null) queue.Enqueue(current.left);
-                if (node.right == null) queue.Enqueue(current.right);
-            }
-        }
-    }
-
     public class BST : BinaryTree
     {
         public BST(BTNode root) : base(root)
         {
+        }
+
+        public int FindHeight(BTNode node)
+        {
+            if (node == null)
+                //+1 will cause a leaf node will return 1, so need this to balance out
+                return -1;
+
+            return Math.Max(FindHeight(node.left), FindHeight(node.right)) + 1;
         }
 
         public void Insert(int value)
@@ -173,5 +112,6 @@ namespace CodingProblems
 
             return node;
         }
+        //Check level
     }
 }

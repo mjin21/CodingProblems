@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace CodingProblems.DataStructures
 {
@@ -15,6 +16,25 @@ namespace CodingProblems.DataStructures
                 return -1;
 
             return Math.Max(FindHeight(node.left), FindHeight(node.right)) + 1;
+        }
+
+        public void ConstructBalanced(int[] values)
+        {
+            //Sort
+
+            ConstructBalancedRecurs(values, 0, values.Length - 1);
+        }
+        public BTNode ConstructBalancedRecurs(int[] values, int start, int end)
+        {
+            if (start > end)
+                return null;
+
+            int mid = end - start / 2;
+            BTNode node = new BTNode(null, null, values[mid]);
+            
+            node.left = ConstructBalancedRecurs(values, start, mid - 1);
+            node.right = ConstructBalancedRecurs(values, mid + 1, end);
+            return node;
         }
 
         public void Insert(int value)
@@ -112,6 +132,18 @@ namespace CodingProblems.DataStructures
 
             return node;
         }
-        //Check level
+        public int CheckLevel(BTNode node, int value)
+        {
+            if (node == null)
+                return 0;
+
+            if (value == (int)node.value)
+                return 1;
+
+            int left = CheckLevel(node.left, value);
+            int right = CheckLevel(node.right, value);
+
+            return Math.Max(left+1, right+1);
+        }
     }
 }

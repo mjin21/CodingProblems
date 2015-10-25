@@ -23,7 +23,7 @@
                 {
                     for(int j = i; j < b.Length; j++)
                     {
-                        if (a[i] == b[i])
+                        if (a[j] == b[j])
                             continue;
                         else
                         {

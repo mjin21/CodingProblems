@@ -86,6 +86,23 @@ namespace CodingProblems.DataStructures
             }
         }
 
+
+        public bool IsBst(BTNode node)
+        {
+            if (node == null)
+                return true;
+
+            if (node.left != null && (int)node.left.value > (int)node.value)
+                return false;
+
+            if (node.right != null && (int)node.right.value < (int)node.value)
+                return false;
+
+            if (!IsBST(node.left) || !IsBST(node.right))
+                return false;
+
+            return true;
+        }
         //Check if BST... How about inorder traversal and checking if its sorted???
         public bool IsBST(BTNode node)
         {

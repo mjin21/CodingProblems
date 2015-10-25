@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CodingProblems
+namespace CodingProblems.DataStructures.LinkedList
 {
     public class Node
     {

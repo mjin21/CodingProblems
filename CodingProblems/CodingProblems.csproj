@@ -43,14 +43,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CircularLinkedList.cs" />
     <Compile Include="DataStructures\BST.cs" />
     <Compile Include="DataStructures\BT.cs" />
+    <Compile Include="DataStructures\DoubleLinkedList.cs" />
+    <Compile Include="DataStructures\Trie.cs" />
     <Compile Include="DeleteMiddleNode.cs" />
     <Compile Include="DeleteRowInMatrix.cs" />
     <Compile Include="Equilibrium.cs" />
     <Compile Include="DataStructures\Graph.cs" />
     <Compile Include="DataStructures\LinkedList.cs" />
     <Compile Include="HourMinuteHand.cs" />
+    <Compile Include="LRUCache.cs" />
     <Compile Include="NumSquares.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -58,6 +62,8 @@
     <Compile Include="RotateImage.cs" />
     <Compile Include="ShiftList.cs" />
     <Compile Include="StringPermutation.cs" />
+    <Compile Include="Sums.cs" />
+    <Compile Include="TicTacToe.cs" />
     <Compile Include="WordPattern.cs" />
   </ItemGroup>
   <ItemGroup>

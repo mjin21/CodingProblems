@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CircularLinkedList.cs" />
+    <Compile Include="CompressWords.cs" />
     <Compile Include="DataStructures\BST.cs" />
     <Compile Include="DataStructures\BT.cs" />
     <Compile Include="DataStructures\DoubleLinkedList.cs" />

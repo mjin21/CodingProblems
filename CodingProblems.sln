@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodingProblems", "CodingProblems\CodingProblems.csproj", "{2289C9CF-D5EB-447B-B790-577B8FF225CE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{4D08EC41-D8A5-4B73-9821-BE3C3AA5B7CC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{2289C9CF-D5EB-447B-B790-577B8FF225CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2289C9CF-D5EB-447B-B790-577B8FF225CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2289C9CF-D5EB-447B-B790-577B8FF225CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D08EC41-D8A5-4B73-9821-BE3C3AA5B7CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D08EC41-D8A5-4B73-9821-BE3C3AA5B7CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D08EC41-D8A5-4B73-9821-BE3C3AA5B7CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D08EC41-D8A5-4B73-9821-BE3C3AA5B7CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

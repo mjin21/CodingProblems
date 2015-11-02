@@ -51,6 +51,7 @@
     <Compile Include="DataStructures\Trie.cs" />
     <Compile Include="DeleteMiddleNode.cs" />
     <Compile Include="DeleteRowInMatrix.cs" />
+    <Compile Include="DotProduct.cs" />
     <Compile Include="Equilibrium.cs" />
     <Compile Include="DataStructures\Graph.cs" />
     <Compile Include="DataStructures\LinkedList.cs" />
@@ -63,6 +64,8 @@
     <Compile Include="ReversePolish.cs" />
     <Compile Include="RotateImage.cs" />
     <Compile Include="ShiftList.cs" />
+    <Compile Include="Sorting\Insertion.cs" />
+    <Compile Include="Sorting\Selection.cs" />
     <Compile Include="StockTrading.cs" />
     <Compile Include="StringPermutation.cs" />
     <Compile Include="Sums.cs" />
